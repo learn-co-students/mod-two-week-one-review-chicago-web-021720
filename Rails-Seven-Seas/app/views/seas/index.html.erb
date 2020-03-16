@@ -13,7 +13,8 @@
             <h4 class="card-title text-center"><%= sea.name %></h4>
             <p class="card-text" style="height: 10rem"><%= sea.bio %></p>
             <a href="/seas/<%=sea.id%>" style="width: 100%" class="btn btn-info">Sea Profile</a>
-          </div>
+            <p><%= link_to 'Destroy', sea_path(sea), method: :delete, data: {confirm: 'R U Sure?'} %></p>
+            </div>
         </div>
       </div>
     <% end %>

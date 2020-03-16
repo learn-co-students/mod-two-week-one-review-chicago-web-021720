@@ -37,7 +37,7 @@ class SeasController < ApplicationController
 
   def destroy
       Sea.destroy(params[:id])
-      redirect_to sea_path
+      redirect_to '/seas'
   end
 
 
